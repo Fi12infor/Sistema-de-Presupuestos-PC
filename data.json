@@ -1,0 +1,34 @@
+{
+    "procesadores": [
+        {
+        "id": 1,
+        "categoria": "Procesador",
+        "nombre": "intel",
+        "precio": 200
+        },
+        {
+        "id": 2,
+        "categoria": "Procesador",
+        "nombre": "amd",
+        "precio": 200
+        },
+        {
+        "id": 3,
+        "categoria": "Procesador",
+        "nombre": "amd",
+        "precio": 200
+        },
+                {
+        "id": 3,
+        "categoria": "Procesador",
+        "nombre": "amd",
+        "precio": 250
+        }
+    ],
+    "tarjetas graficas": [],
+    "memoria ram": [],
+    "fuente de alimentacion": [],
+    "refrigeracion": [],
+    "placa base": [],
+    "cajas": []
+}
