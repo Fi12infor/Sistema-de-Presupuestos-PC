@@ -1,6 +1,6 @@
 import os
 def menu():
-    print("=====Inel Tech S.L=====")
+    print("================== Inel Tech S.L ==================")
     print("1. Procesadores")
     print("2. Tarjetas Graficas")
     print("3. Memoria RAM")

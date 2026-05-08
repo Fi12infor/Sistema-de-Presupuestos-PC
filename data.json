@@ -3,30 +3,80 @@
         {
         "id": 1,
         "categoria": "Procesador",
-        "nombre": "intel",
-        "precio": 200
+        "nombre": "Procesador Intel Core i7-14700KF 3.4/5.6GHz Box",
+        "precio": 340.90
         },
         {
         "id": 2,
         "categoria": "Procesador",
-        "nombre": "amd",
-        "precio": 200
+        "nombre": "Procesador AMD Ryzen 7 5700X 3.4GHz Box",
+        "precio": 149.90
         },
         {
         "id": 3,
         "categoria": "Procesador",
-        "nombre": "amd",
-        "precio": 200
+        "nombre": "Procesador Intel Core i3-14100F 3.5/4.7GHz Box",
+        "precio": 103.48
         },
-                {
-        "id": 3,
-        "categoria": "Procesador",
-        "nombre": "amd",
-        "precio": 250
+        {
+        "id": 4,
+        "categoria": "Procesadores",
+        "nombre": "Procesador AMD Ryzen 5 5600XT 3.7/4.7GHz",
+        "precio": 149.90
         }
     ],
-    "tarjetas graficas": [],
-    "memoria ram": [],
+    "tarjetas graficas": [
+        {
+            "id": 5,
+            "categoria": "Tarjetas Graficas",
+            "nombre": "Tarjeta Gráfica Gigabyte GeForce RTX 5070 GAMING OC 12GB GDDR7 Reflex 2",
+            "precio": 609.90
+        },
+        {
+            "id": 6,
+            "categoria": "Tarjetas Graficas",
+            "nombre": "Tarjeta Gráfica Sapphire PULSE AMD Radeon RX 9060 XT 16GB GDDR6",
+            "precio": 459.90
+        },
+        {
+            "id": 7,
+            "categoria": "Tarjetas Graficas",
+            "nombre": "Tarjeta Gráfica Asus GeForce RTX 5080 OC 16GB GDDR7 Reflex 2",
+            "precio": 1499
+        },
+        {
+            "id": 8,
+            "categoria": "Tarjetas Graficas",
+            "nombre": "Tarjeta Gráfica MSI GeForce RTX 3050 LP E 6G OC 6GB GDDR6",
+            "precio": 234.90
+        }
+    ],
+    "memoria ram": [
+        {
+            "id": 9,
+            "categoria": "Memorias Ram",
+            "nombre": "Forgeon Cyclone PLUS V2 DDR4 3200 MHz 16GB 2x8GB CL16 Negra",
+            "precio": 139.95
+        },
+        {
+            "id": 10,
+            "categoria": "Memorias Ram",
+            "nombre": "Team Group T-Force Delta RGB DDR5 6000MHz 32GB 2x16GB CL30 Dual AMD EXPO e Intel XMP Negro",
+            "precio": 459.95
+        },
+        {
+            "id": 11,
+            "categoria": "Memorias Ram",
+            "nombre": "Kingston FURY Beast DDR5 5200MHz 16GB CL40",
+            "precio": 209.95
+        },
+        {
+            "id": 12,
+            "categoria": "Memorias Ram",
+            "nombre": "Corsair Vengeance LPX DDR4 2400 PC4-19200 16GB CL14",
+            "precio": 139.95
+        }
+    ],
     "fuente de alimentacion": [],
     "refrigeracion": [],
     "placa base": [],

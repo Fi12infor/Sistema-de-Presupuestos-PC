@@ -5,7 +5,7 @@ datos = get_data()
 
 def menu_fuente():
     print("Usted ha seleccionado la categoria Fuente de alimentación")
-    print("=======")
+    print("===========================================================")
     print(f"1. {datos["procesadores"][0]["nombre"]} precio: {datos["procesadores"][0]["precio"]}€")
     print(f"2. {datos["procesadores"][1]["nombre"]} precio: {datos["procesadores"][1]["precio"]}€")
     print(f"3. {datos["procesadores"][2]["nombre"]} precio: {datos["procesadores"][2]["precio"]}€")
