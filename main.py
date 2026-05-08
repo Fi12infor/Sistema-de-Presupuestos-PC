@@ -1,13 +1,18 @@
 ## Imports
 import time
-import json
-from funciones import menu_cpu, menu_gpu, menu_ram, menu_fuente, menu_placa, menu_refrigeracion, menu, menu_cajas, menu_salir
+from funciones.menu.menu import menu
+from funciones.menu.menu_cajas import menu_cajas
+from funciones.menu.menu_cpu import menu_cpu
+from funciones.menu.menu_fuente import menu_fuente
+from funciones.menu.menu_gpu import menu_gpu
+from funciones.menu.menu_placa import menu_placa
+from funciones.menu.menu_ram import menu_ram
+from funciones.menu.menu_refrigeracion import menu_refrigeracion
+from funciones.menu.menu_salir import menu_salir
 ## Codigo principal
 op = 0
 salir = 9
 
-with open ('data.json', 'r', encoding='utf-8') as archivo:
-    datos = json.load(archivo)
 
 
 while op!=salir:
