@@ -8,6 +8,7 @@ from funciones.menu.menu_gpu import menu_gpu
 from funciones.menu.menu_placa import menu_placa
 from funciones.menu.menu_ram import menu_ram
 from funciones.menu.menu_refrigeracion import menu_refrigeracion
+from funciones.menu.menu_almacenamiento import menu_almacenamiento
 from funciones.menu.menu_salir import menu_salir
 ## Codigo principal
 op = 0
@@ -31,6 +32,8 @@ while op!=salir:
         op_caja = menu_cajas()
     elif op == 7:
         op_placa = menu_placa()
+    elif op == 8:
+        op_almacenamiento = menu_almacenamiento()
     elif op == salir:
         menu_salir()
     else:
