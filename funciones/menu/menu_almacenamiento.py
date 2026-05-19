@@ -11,7 +11,8 @@ def menu_almacenamiento():
     print(f"2. {datos["discos duros"][1]["nombre"]} precio: {datos["discos duros"][1]["precio"]}€")
     print(f"3. {datos["discos duros"][2]["nombre"]} precio: {datos["discos duros"][2]["precio"]}€")
     print(f"4. {datos["discos duros"][3]["nombre"]} precio: {datos["discos duros"][3]["precio"]}€")
-    print("================== Refrigeración liquida ==================")
     op_almacenamiento = int(input("Indique el almacenamiento que quiere añadir: "))
+    almacenamiento = op_almacenamiento
+    almacenamiento = almacenamiento - 1
     time.sleep(1)
-    return op_almacenamiento
+    return almacenamiento

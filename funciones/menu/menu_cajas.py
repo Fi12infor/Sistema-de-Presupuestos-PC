@@ -11,5 +11,7 @@ def menu_cajas():
     print(f"3. {datos["cajas"][2]["nombre"]} precio: {datos["cajas"][2]["precio"]}€")
     print(f"4. {datos["cajas"][3]["nombre"]} precio: {datos["cajas"][3]["precio"]}€")
     op_caja = int(input("Indique la Caja que quiere añadir: "))
+    caja = op_caja
+    caja = caja - 1
     time.sleep(1)
-    return op_caja
+    return caja

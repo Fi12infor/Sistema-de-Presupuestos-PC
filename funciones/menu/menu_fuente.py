@@ -11,5 +11,7 @@ def menu_fuente():
     print(f"3. {datos["fuente de alimentacion"][2]["nombre"]} precio: {datos["fuente de alimentacion"][2]["precio"]}€")
     print(f"4. {datos["fuente de alimentacion"][3]["nombre"]} precio: {datos["fuente de alimentacion"][3]["precio"]}€")
     op_fuente = int(input("Indique la fuente de alimentación que quiere añadir: "))
+    fuente = op_fuente
+    fuente = fuente - 1
     time.sleep(1)
-    return op_fuente
+    return fuente

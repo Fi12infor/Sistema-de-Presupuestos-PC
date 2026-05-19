@@ -11,5 +11,7 @@ def menu_placa():
     print(f"3. {datos["placa base"][2]["nombre"]} precio: {datos["placa base"][2]["precio"]}€")
     print(f"4. {datos["placa base"][3]["nombre"]} precio: {datos["placa base"][3]["precio"]}€")
     op_placa = int(input("Indique la placa base que quiere añadir: "))
+    placa = op_placa
+    placa = placa - 1
     time.sleep(1)
-    return op_placa
+    return placa

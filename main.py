@@ -1,5 +1,4 @@
 ## Imports
-import time
 from funciones.menu.menu import menu
 from funciones.menu.menu_cajas import menu_cajas
 from funciones.menu.menu_cpu import menu_cpu
@@ -11,33 +10,80 @@ from funciones.menu.menu_refrigeracion import menu_refrigeracion
 from funciones.menu.menu_almacenamiento import menu_almacenamiento
 from funciones.calculos.get_total import get_total
 from funciones.menu.menu_salir import menu_salir
+from funciones.data.get_data import get_data
+
+
 
 ## Codigo principal
 op = 0
 salir = 9
+datos = get_data()
 
+## Constantes
+IGIC = 0.07
+MANO_OBRA = 40
 
+## Codigo principal
+while True:
+    print("================================")
+    print(" INEL TECH - PRESUPUESTOS")
+    print("================================\n")
 
-while op!=salir:
-    op = menu()
-    if op == 1:
-        op_cpu = menu_cpu()
-    elif op == 2:
-        op_gpu = menu_gpu()
-    elif op == 3:
-        op_ram = menu_ram()
-    elif op == 4:
-        op_fuente = menu_fuente()
-    elif op == 5:
-        op_refrigeracion = menu_refrigeracion()
-    elif op == 6:
-        op_caja = menu_cajas()
-    elif op == 7:
-        op_placa = menu_placa()
-    elif op == 8:
-        op_almacenamiento = menu_almacenamiento()
-    elif op == salir:
+    cliente = input("Nombre del cliente: ")
+
+    presupuesto = []
+
+    cpu = menu_cpu()
+    presupuesto.append(datos["procesadores"][cpu])
+    gpu = menu_gpu()
+    presupuesto.append(datos["tarjetas graficas"][gpu])
+
+    ram = menu_ram()
+    presupuesto.append(datos["memoria ram"][ram])
+
+    almacenamiento = menu_almacenamiento()
+    presupuesto.append(datos["discos duros"][almacenamiento])
+
+    fuente = menu_fuente()
+    presupuesto.append(datos["fuente de alimentacion"][fuente])
+
+    placa = menu_placa()
+    presupuesto.append(datos["placa base"][placa])
+
+    refrigeracion = menu_refrigeracion()
+    presupuesto.append(datos["refrigeracion"][refrigeracion])
+
+    caja = menu_cajas()
+    presupuesto.append(datos["cajas"][caja])
+
+    subtotal_hardware = 0
+
+    for componente in presupuesto:
+        subtotal_hardware += componente["precio"]
+
+    base_imponible = subtotal_hardware + MANO_OBRA
+    igic = base_imponible * IGIC
+    total = base_imponible + igic
+
+    print("\n================================")
+    print(" PRESUPUESTO FINAL")
+    print("================================")
+    print(f"Cliente: {cliente}")
+    print("--------------------------------")
+
+    for componente in presupuesto:
+        print(f'{componente["nombre"]}: {componente["precio"]}€')
+
+    print("--------------------------------")
+    print(f"Hardware: {subtotal_hardware:.2f}€")
+    print(f"Mano de obra: {MANO_OBRA:.2f}€")
+    print(f"Base imponible: {base_imponible:.2f}€")
+    print(f"IGIC 7%: {igic:.2f}€")
+    print(f"Total a pagar: {total:.2f}€")
+    print("================================")
+
+    repetir = input("¿Quieres crear otro presupuesto? s/n: ")
+
+    if repetir.lower() != "s":
         menu_salir()
-    else:
-        print("Opción invalida")
-        time.sleep(1)
+        break

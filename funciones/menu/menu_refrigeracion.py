@@ -10,7 +10,8 @@ def menu_refrigeracion():
     print(f"2. {datos["refrigeracion"][1]["nombre"]} precio: {datos["refrigeracion"][1]["precio"]}€")
     print(f"3. {datos["refrigeracion"][2]["nombre"]} precio: {datos["refrigeracion"][2]["precio"]}€")
     print(f"4. {datos["refrigeracion"][3]["nombre"]} precio: {datos["refrigeracion"][3]["precio"]}€")
-    print("================== Refrigeración liquida ==================")
     op_refrigeracion = int(input("Indique la refrigeración que quiere añadir: "))
+    refrigeracion = op_refrigeracion
+    refrigeracion = refrigeracion - 1
     time.sleep(1)
-    return op_refrigeracion
+    return refrigeracion

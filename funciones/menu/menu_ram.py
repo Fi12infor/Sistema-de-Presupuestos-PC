@@ -11,5 +11,7 @@ def menu_ram():
     print(f"3. {datos["memoria ram"][2]["nombre"]} precio: {datos["memoria ram"][2]["precio"]}€")
     print(f"4. {datos["memoria ram"][3]["nombre"]} precio: {datos["memoria ram"][3]["precio"]}€")
     op_ram = int(input("Indique la memoria ram que quiere añadir: "))
+    ram = op_ram
+    ram = ram - 1
     time.sleep(1)
-    return op_ram
+    return ram
