@@ -24,7 +24,7 @@ IGIC = 0.07
 MANO_OBRA = 40
 
 ## Codigo principal
-while True:
+while op != salir:
     print("================================")
     print(" INEL TECH - PRESUPUESTOS")
     print("================================\n")
@@ -86,4 +86,3 @@ while True:
 
     if repetir.lower() != "s":
         menu_salir()
-        break
