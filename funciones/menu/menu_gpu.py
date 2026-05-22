@@ -4,8 +4,7 @@ from ..data.get_data import get_data
 datos = get_data()
 
 def menu_gpu():
-    print("Usted ha seleccionado la categoria Tarjetas Graficas")
-    print("=======")
+    print("\n===========================================================")
     print(f"1. {datos["tarjetas graficas"][0]["nombre"]} precio: {datos["tarjetas graficas"][0]["precio"]}€")
     print(f"2. {datos["tarjetas graficas"][1]["nombre"]} precio: {datos["tarjetas graficas"][1]["precio"]}€")
     print(f"3. {datos["tarjetas graficas"][2]["nombre"]} precio: {datos["tarjetas graficas"][2]["precio"]}€")

@@ -4,8 +4,7 @@ from ..data.get_data import get_data
 datos = get_data()
 
 def menu_cajas():
-    print("Usted ha seleccionado la categoria Cajas")
-    print("===========================================================")
+    print("\n===========================================================")
     print(f"1. {datos["cajas"][0]["nombre"]} precio: {datos["cajas"][0]["precio"]}€")
     print(f"2. {datos["cajas"][1]["nombre"]} precio: {datos["cajas"][1]["precio"]}€")
     print(f"3. {datos["cajas"][2]["nombre"]} precio: {datos["cajas"][2]["precio"]}€")

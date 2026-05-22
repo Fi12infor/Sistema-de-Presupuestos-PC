@@ -4,8 +4,7 @@ from ..data.get_data import get_data
 datos = get_data()
 
 def menu_ram():
-    print("Usted ha seleccionado la categoria Memorias ram")
-    print("===========================================================")
+    print("\n===========================================================")
     print(f"1. {datos["memoria ram"][0]["nombre"]} precio: {datos["memoria ram"][0]["precio"]}€")
     print(f"2. {datos["memoria ram"][1]["nombre"]} precio: {datos["memoria ram"][1]["precio"]}€")
     print(f"3. {datos["memoria ram"][2]["nombre"]} precio: {datos["memoria ram"][2]["precio"]}€")

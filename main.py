@@ -1,5 +1,4 @@
 ## Imports
-from funciones.menu.menu import menu
 from funciones.menu.menu_cajas import menu_cajas
 from funciones.menu.menu_cpu import menu_cpu
 from funciones.menu.menu_fuente import menu_fuente
@@ -8,7 +7,6 @@ from funciones.menu.menu_placa import menu_placa
 from funciones.menu.menu_ram import menu_ram
 from funciones.menu.menu_refrigeracion import menu_refrigeracion
 from funciones.menu.menu_almacenamiento import menu_almacenamiento
-from funciones.calculos.get_total import get_total
 from funciones.menu.menu_salir import menu_salir
 from funciones.data.get_data import get_data
 

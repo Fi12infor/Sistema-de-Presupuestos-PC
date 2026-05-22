@@ -4,8 +4,7 @@ from ..data.get_data import get_data
 datos = get_data()
 
 def menu_placa():
-    print("Usted ha seleccionado la categoria  Placa base")
-    print("===========================================================")
+    print("\n===========================================================")
     print(f"1. {datos["placa base"][0]["nombre"]} precio: {datos["placa base"][0]["precio"]}€")
     print(f"2. {datos["placa base"][1]["nombre"]} precio: {datos["placa base"][1]["precio"]}€")
     print(f"3. {datos["placa base"][2]["nombre"]} precio: {datos["placa base"][2]["precio"]}€")

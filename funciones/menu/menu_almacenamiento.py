@@ -5,8 +5,7 @@ datos = get_data()
 
 
 def menu_almacenamiento():
-    print("Usted ha seleccionado la categoria almacenamiento")
-    print("===========================================================")
+    print("\n===========================================================")
     print(f"1. {datos["discos duros"][0]["nombre"]} precio: {datos["discos duros"][0]["precio"]}€")
     print(f"2. {datos["discos duros"][1]["nombre"]} precio: {datos["discos duros"][1]["precio"]}€")
     print(f"3. {datos["discos duros"][2]["nombre"]} precio: {datos["discos duros"][2]["precio"]}€")
