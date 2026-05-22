@@ -84,3 +84,4 @@ while op != salir:
 
     if repetir.lower() != "s":
         menu_salir()
+        break
